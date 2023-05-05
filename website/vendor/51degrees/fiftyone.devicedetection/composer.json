@@ -1,0 +1,37 @@
+{
+  "name": "51degrees/fiftyone.devicedetection",
+  "description": "Device detection engines for 51Degrees Pipeline API - Get hardware and software details of the device connecting to your website or service",
+  "authors": [
+    {
+      "name": "Filip Hnízdo",
+      "email": "filip@octophin.com",
+      "homepage": "https://octophindigital.com/"
+    },
+    {
+      "name": "Steve Ballantine",
+      "email": "stephen@51degrees.com"
+    },
+    {
+      "name": "Ben Shilito",
+      "email": "ben@51degrees.com"
+    },
+    {
+      "name": "Joseph Dix",
+      "email": "joseph@51degrees.com"
+    }
+  ],
+  "license": "EUPL-1.2",
+  "type": "library",
+  "autoload": {
+    "classmap": [
+      "DeviceDetectionCloud.php",
+      "DeviceDetectionPipelineBuilder.php",
+      "HardwareProfileCloud.php"
+    ]
+  },
+  "require": {
+    "51degrees/fiftyone.pipeline.core": "4.*",
+    "51degrees/fiftyone.pipeline.engines": "4.*",
+    "51degrees/fiftyone.pipeline.cloudrequestengine": "4.*"
+  }
+}

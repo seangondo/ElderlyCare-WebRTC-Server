@@ -1,0 +1,551 @@
+[
+    {
+        "name": "51degrees/fiftyone.devicedetection",
+        "version": "4.4.2",
+        "version_normalized": "4.4.2.0",
+        "source": {
+            "type": "git",
+            "url": "https://github.com/51Degrees/device-detection-php.git",
+            "reference": "0efa744ee84fa4369d0b296fddf6b35645eb4520"
+        },
+        "dist": {
+            "type": "zip",
+            "url": "https://api.github.com/repos/51Degrees/device-detection-php/zipball/0efa744ee84fa4369d0b296fddf6b35645eb4520",
+            "reference": "0efa744ee84fa4369d0b296fddf6b35645eb4520",
+            "shasum": ""
+        },
+        "require": {
+            "51degrees/fiftyone.pipeline.cloudrequestengine": "4.*",
+            "51degrees/fiftyone.pipeline.core": "4.*",
+            "51degrees/fiftyone.pipeline.engines": "4.*"
+        },
+        "time": "2022-05-24T17:46:41+00:00",
+        "type": "library",
+        "installation-source": "dist",
+        "autoload": {
+            "classmap": [
+                "DeviceDetectionCloud.php",
+                "DeviceDetectionPipelineBuilder.php",
+                "HardwareProfileCloud.php"
+            ]
+        },
+        "notification-url": "https://packagist.org/downloads/",
+        "license": [
+            "EUPL-1.2"
+        ],
+        "authors": [
+            {
+                "name": "Filip Hnízdo",
+                "email": "filip@octophin.com",
+                "homepage": "https://octophindigital.com/"
+            },
+            {
+                "name": "Steve Ballantine",
+                "email": "stephen@51degrees.com"
+            },
+            {
+                "name": "Ben Shilito",
+                "email": "ben@51degrees.com"
+            },
+            {
+                "name": "Joseph Dix",
+                "email": "joseph@51degrees.com"
+            }
+        ],
+        "description": "Device detection engines for 51Degrees Pipeline API - Get hardware and software details of the device connecting to your website or service"
+    },
+    {
+        "name": "51degrees/fiftyone.pipeline.cloudrequestengine",
+        "version": "4.4.2",
+        "version_normalized": "4.4.2.0",
+        "source": {
+            "type": "git",
+            "url": "https://github.com/51Degrees/pipeline-php-cloudrequestengine.git",
+            "reference": "3a221bcc6cb0c561bc36f9e71f4707155482170c"
+        },
+        "dist": {
+            "type": "zip",
+            "url": "https://api.github.com/repos/51Degrees/pipeline-php-cloudrequestengine/zipball/3a221bcc6cb0c561bc36f9e71f4707155482170c",
+            "reference": "3a221bcc6cb0c561bc36f9e71f4707155482170c",
+            "shasum": ""
+        },
+        "require": {
+            "51degrees/fiftyone.pipeline.core": "4.*",
+            "51degrees/fiftyone.pipeline.engines": "4.*",
+            "nodejs-php-fallback/uglify": "^1.0"
+        },
+        "time": "2022-05-24T17:22:34+00:00",
+        "type": "library",
+        "installation-source": "dist",
+        "autoload": {
+            "classmap": [
+                "CloudRequestEngine.php",
+                "CloudRequestException.php",
+                "CloudEngine.php",
+                "Constants.php",
+                "HttpClient.php"
+            ]
+        },
+        "notification-url": "https://packagist.org/downloads/",
+        "license": [
+            "EUPL-1.2"
+        ],
+        "authors": [
+            {
+                "name": "Filip Hnízdo",
+                "email": "filip@octophin.com",
+                "homepage": "https://octophindigital.com/"
+            },
+            {
+                "name": "Steve Ballantine",
+                "email": "stephen@51degrees.com"
+            },
+            {
+                "name": "Ben Shilito",
+                "email": "ben@51degrees.com"
+            },
+            {
+                "name": "Joseph Dix",
+                "email": "joseph@51degrees.com"
+            }
+        ],
+        "description": "Cloud request engine for 51Degrees Pipeline API - Used to send requests to the 51Degrees cloud service"
+    },
+    {
+        "name": "51degrees/fiftyone.pipeline.core",
+        "version": "4.4.2",
+        "version_normalized": "4.4.2.0",
+        "source": {
+            "type": "git",
+            "url": "https://github.com/51Degrees/pipeline-php-core.git",
+            "reference": "fddfda7b2992a9857e9ab72d46625f689cac4c71"
+        },
+        "dist": {
+            "type": "zip",
+            "url": "https://api.github.com/repos/51Degrees/pipeline-php-core/zipball/fddfda7b2992a9857e9ab72d46625f689cac4c71",
+            "reference": "fddfda7b2992a9857e9ab72d46625f689cac4c71",
+            "shasum": ""
+        },
+        "require": {
+            "mustache/mustache": "^2.13",
+            "tedivm/jshrink": "~1.0"
+        },
+        "require-dev": {
+            "kint-php/kint": "^3.3"
+        },
+        "time": "2022-05-24T16:59:29+00:00",
+        "type": "library",
+        "installation-source": "dist",
+        "autoload": {
+            "classmap": [
+                "ElementData.php",
+                "AspectPropertyValue.php",
+                "ElementDataDictionary.php",
+                "Evidence.php",
+                "EvidenceKeyFilter.php",
+                "BasicListEvidenceKeyFilter.php",
+                "FlowData.php",
+                "FlowElement.php",
+                "Logger.php",
+                "Messages.php",
+                "Pipeline.php",
+                "PipelineBuilder.php",
+                "JavascriptBuilder.php",
+                "JsonBundler.php",
+                "SequenceElement.php",
+                "SetHeaderElement.php",
+                "Constants.php",
+                "Utils.php"
+            ]
+        },
+        "notification-url": "https://packagist.org/downloads/",
+        "license": [
+            "EUPL-1.2"
+        ],
+        "authors": [
+            {
+                "name": "Filip Hnízdo",
+                "email": "filip@octophin.com",
+                "homepage": "https://octophindigital.com/"
+            },
+            {
+                "name": "Steve Ballantine",
+                "email": "stephen@51degrees.com"
+            },
+            {
+                "name": "Ben Shilito",
+                "email": "ben@51degrees.com"
+            },
+            {
+                "name": "Joseph Dix",
+                "email": "joseph@51degrees.com"
+            }
+        ],
+        "description": "51Degrees Pipeline API - Real-time data micro-services aggregator."
+    },
+    {
+        "name": "51degrees/fiftyone.pipeline.engines",
+        "version": "4.4.2",
+        "version_normalized": "4.4.2.0",
+        "source": {
+            "type": "git",
+            "url": "https://github.com/51Degrees/pipeline-php-engines.git",
+            "reference": "17b57a113e1f8b5c46e54ccda4b83757405ffc60"
+        },
+        "dist": {
+            "type": "zip",
+            "url": "https://api.github.com/repos/51Degrees/pipeline-php-engines/zipball/17b57a113e1f8b5c46e54ccda4b83757405ffc60",
+            "reference": "17b57a113e1f8b5c46e54ccda4b83757405ffc60",
+            "shasum": ""
+        },
+        "require": {
+            "51degrees/fiftyone.pipeline.core": "4.*"
+        },
+        "time": "2022-05-24T17:07:41+00:00",
+        "type": "library",
+        "installation-source": "dist",
+        "autoload": {
+            "classmap": [
+                "AspectData.php",
+                "AspectDataDictionary.php",
+                "DataKeyedCache.php",
+                "Engine.php",
+                "CloudEngineBase.php",
+                "MissingPropertyService.php",
+                "MissingPropertyReason.php",
+                "MissingPropertyMessages.php",
+                "SessionCache.php",
+                "Tracker.php"
+            ]
+        },
+        "notification-url": "https://packagist.org/downloads/",
+        "license": [
+            "EUPL-1.2"
+        ],
+        "authors": [
+            {
+                "name": "Filip Hnízdo",
+                "email": "filip@octophin.com",
+                "homepage": "https://octophindigital.com/"
+            },
+            {
+                "name": "Steve Ballantine",
+                "email": "stephen@51degrees.com"
+            },
+            {
+                "name": "Ben Shilito",
+                "email": "ben@51degrees.com"
+            },
+            {
+                "name": "Joseph Dix",
+                "email": "joseph@51degrees.com"
+            }
+        ],
+        "description": "Engines shared functionality library for 51Degrees Pipeline API"
+    },
+    {
+        "name": "gkralik/php-uglifyjs",
+        "version": "1.0.2",
+        "version_normalized": "1.0.2.0",
+        "source": {
+            "type": "git",
+            "url": "https://github.com/gkralik/php-uglifyjs.git",
+            "reference": "0c63301bf131c6c0e48ef26cf40e65bf20936932"
+        },
+        "dist": {
+            "type": "zip",
+            "url": "https://api.github.com/repos/gkralik/php-uglifyjs/zipball/0c63301bf131c6c0e48ef26cf40e65bf20936932",
+            "reference": "0c63301bf131c6c0e48ef26cf40e65bf20936932",
+            "shasum": ""
+        },
+        "time": "2019-10-03T11:54:22+00:00",
+        "type": "library",
+        "installation-source": "dist",
+        "autoload": {
+            "psr-4": {
+                "GK\\": "lib/"
+            }
+        },
+        "notification-url": "https://packagist.org/downloads/",
+        "license": [
+            "LGPL-2.1-or-later"
+        ],
+        "authors": [
+            {
+                "name": "Gregor Kralik",
+                "email": "g.kralik@gmail.com"
+            }
+        ],
+        "description": "PHP Javascript packer"
+    },
+    {
+        "name": "mustache/mustache",
+        "version": "v2.14.2",
+        "version_normalized": "2.14.2.0",
+        "source": {
+            "type": "git",
+            "url": "https://github.com/bobthecow/mustache.php.git",
+            "reference": "e62b7c3849d22ec55f3ec425507bf7968193a6cb"
+        },
+        "dist": {
+            "type": "zip",
+            "url": "https://api.github.com/repos/bobthecow/mustache.php/zipball/e62b7c3849d22ec55f3ec425507bf7968193a6cb",
+            "reference": "e62b7c3849d22ec55f3ec425507bf7968193a6cb",
+            "shasum": ""
+        },
+        "require": {
+            "php": ">=5.2.4"
+        },
+        "require-dev": {
+            "friendsofphp/php-cs-fixer": "~1.11",
+            "phpunit/phpunit": "~3.7|~4.0|~5.0"
+        },
+        "time": "2022-08-23T13:07:01+00:00",
+        "type": "library",
+        "installation-source": "dist",
+        "autoload": {
+            "psr-0": {
+                "Mustache": "src/"
+            }
+        },
+        "notification-url": "https://packagist.org/downloads/",
+        "license": [
+            "MIT"
+        ],
+        "authors": [
+            {
+                "name": "Justin Hileman",
+                "email": "justin@justinhileman.info",
+                "homepage": "http://justinhileman.com"
+            }
+        ],
+        "description": "A Mustache implementation in PHP.",
+        "homepage": "https://github.com/bobthecow/mustache.php",
+        "keywords": [
+            "mustache",
+            "templating"
+        ]
+    },
+    {
+        "name": "natxet/cssmin",
+        "version": "v3.0.6",
+        "version_normalized": "3.0.6.0",
+        "source": {
+            "type": "git",
+            "url": "https://github.com/natxet/CssMin.git",
+            "reference": "d5d9f4c3e5cedb1ae96a95a21731f8790e38f1dd"
+        },
+        "dist": {
+            "type": "zip",
+            "url": "https://api.github.com/repos/natxet/CssMin/zipball/d5d9f4c3e5cedb1ae96a95a21731f8790e38f1dd",
+            "reference": "d5d9f4c3e5cedb1ae96a95a21731f8790e38f1dd",
+            "shasum": ""
+        },
+        "require": {
+            "php": ">=5.0"
+        },
+        "time": "2018-01-09T11:15:01+00:00",
+        "type": "library",
+        "extra": {
+            "branch-alias": {
+                "dev-master": "3.0-dev"
+            }
+        },
+        "installation-source": "dist",
+        "autoload": {
+            "classmap": [
+                "src/"
+            ]
+        },
+        "notification-url": "https://packagist.org/downloads/",
+        "license": [
+            "MIT"
+        ],
+        "authors": [
+            {
+                "name": "Joe Scylla",
+                "email": "joe.scylla@gmail.com",
+                "homepage": "https://profiles.google.com/joe.scylla"
+            }
+        ],
+        "description": "Minifying CSS",
+        "homepage": "http://code.google.com/p/cssmin/",
+        "keywords": [
+            "css",
+            "minify"
+        ]
+    },
+    {
+        "name": "nodejs-php-fallback/nodejs-php-fallback",
+        "version": "1.6.0",
+        "version_normalized": "1.6.0.0",
+        "source": {
+            "type": "git",
+            "url": "https://github.com/kylekatarnls/nodejs-php-fallback.git",
+            "reference": "0dbdbc0cccf3c6c4a86189b21ce898252e287072"
+        },
+        "dist": {
+            "type": "zip",
+            "url": "https://api.github.com/repos/kylekatarnls/nodejs-php-fallback/zipball/0dbdbc0cccf3c6c4a86189b21ce898252e287072",
+            "reference": "0dbdbc0cccf3c6c4a86189b21ce898252e287072",
+            "shasum": ""
+        },
+        "require": {
+            "composer-plugin-api": "^1.0 || ^2.0",
+            "php": ">=7.3"
+        },
+        "require-dev": {
+            "composer/composer": "^2.0",
+            "phpmd/phpmd": "^2.9",
+            "phpunit/phpunit": "^8.5"
+        },
+        "time": "2020-10-30T09:26:47+00:00",
+        "type": "composer-plugin",
+        "extra": {
+            "branch-alias": {
+                "dev-master": "2.x-dev"
+            },
+            "class": "NodejsPhpFallback\\ComposerPlugin"
+        },
+        "installation-source": "dist",
+        "autoload": {
+            "psr-4": {
+                "NodejsPhpFallback\\": "src/NodejsPhpFallback/"
+            }
+        },
+        "notification-url": "https://packagist.org/downloads/",
+        "license": [
+            "MIT"
+        ],
+        "authors": [
+            {
+                "name": "Kyle",
+                "email": "kylekatarnls@gmail.com"
+            }
+        ],
+        "description": "Allow you to call node.js module or scripts throught PHP and call a fallback function if node.js is not available",
+        "funding": [
+            {
+                "url": "https://github.com/kylekatarnls",
+                "type": "github"
+            },
+            {
+                "url": "https://opencollective.com/Carbon",
+                "type": "open_collective"
+            },
+            {
+                "url": "https://tidelift.com/funding/github/packagist/nesbot/carbon",
+                "type": "tidelift"
+            }
+        ]
+    },
+    {
+        "name": "nodejs-php-fallback/uglify",
+        "version": "1.0.4",
+        "version_normalized": "1.0.4.0",
+        "source": {
+            "type": "git",
+            "url": "https://github.com/kylekatarnls/uglify.git",
+            "reference": "b3572042b6710173f8a3378b8b5c76f8ecdc74a8"
+        },
+        "dist": {
+            "type": "zip",
+            "url": "https://api.github.com/repos/kylekatarnls/uglify/zipball/b3572042b6710173f8a3378b8b5c76f8ecdc74a8",
+            "reference": "b3572042b6710173f8a3378b8b5c76f8ecdc74a8",
+            "shasum": ""
+        },
+        "require": {
+            "gkralik/php-uglifyjs": "*",
+            "natxet/cssmin": "*",
+            "nodejs-php-fallback/nodejs-php-fallback": "^1.2.3"
+        },
+        "require-dev": {
+            "codeclimate/php-test-reporter": "dev-master",
+            "composer/composer": "^1.2",
+            "phpunit/phpunit": ">=4.8 <6.0"
+        },
+        "time": "2019-01-16T14:47:09+00:00",
+        "type": "library",
+        "extra": {
+            "npm": [
+                "uglify-js",
+                "clean-css"
+            ]
+        },
+        "installation-source": "dist",
+        "autoload": {
+            "psr-0": {
+                "NodejsPhpFallback\\": "src/"
+            }
+        },
+        "notification-url": "https://packagist.org/downloads/",
+        "license": [
+            "MIT"
+        ],
+        "authors": [
+            {
+                "name": "Kyle",
+                "email": "kylekatarnls@gmail.com"
+            }
+        ],
+        "description": "PHP wrapper to execute uglify-js/clean-css node package or fallback to PHP alternatives"
+    },
+    {
+        "name": "tedivm/jshrink",
+        "version": "v1.6.5",
+        "version_normalized": "1.6.5.0",
+        "source": {
+            "type": "git",
+            "url": "https://github.com/tedious/JShrink.git",
+            "reference": "aa786b10f012fc0e15b5147c22bdb8c765fac76a"
+        },
+        "dist": {
+            "type": "zip",
+            "url": "https://api.github.com/repos/tedious/JShrink/zipball/aa786b10f012fc0e15b5147c22bdb8c765fac76a",
+            "reference": "aa786b10f012fc0e15b5147c22bdb8c765fac76a",
+            "shasum": ""
+        },
+        "require": {
+            "php": "^7.0|^8.0"
+        },
+        "require-dev": {
+            "friendsofphp/php-cs-fixer": "^3.14",
+            "php-coveralls/php-coveralls": "^2.5.0",
+            "phpunit/phpunit": "^9|^10"
+        },
+        "time": "2023-03-12T15:19:34+00:00",
+        "type": "library",
+        "installation-source": "dist",
+        "autoload": {
+            "psr-0": {
+                "JShrink": "src/"
+            }
+        },
+        "notification-url": "https://packagist.org/downloads/",
+        "license": [
+            "BSD-3-Clause"
+        ],
+        "authors": [
+            {
+                "name": "Robert Hafner",
+                "email": "tedivm@tedivm.com"
+            }
+        ],
+        "description": "Javascript Minifier built in PHP",
+        "homepage": "http://github.com/tedious/JShrink",
+        "keywords": [
+            "javascript",
+            "minifier"
+        ],
+        "funding": [
+            {
+                "url": "https://github.com/tedivm",
+                "type": "github"
+            },
+            {
+                "url": "https://tidelift.com/funding/github/packagist/tedivm/jshrink",
+                "type": "tidelift"
+            }
+        ]
+    }
+]

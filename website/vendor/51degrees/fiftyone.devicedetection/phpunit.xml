@@ -1,0 +1,20 @@
+<phpunit>
+  <php>
+    <env name="RESOURCEKEY" value="!!YOUR_RESOURCE_KEY!!" force="true"/>
+    <env name="FOD_CLOUD_API_URL" value="" force="true"/>
+    <env name="AcceptChPlatformKey" value="!!YOUR_RESOURCE_KEY!!" force="true"/>
+    <env name="AcceptChHardwareKey" value="!!YOUR_RESOURCE_KEY!!" force="true"/>
+    <env name="AcceptChBrowserKey" value="!!YOUR_RESOURCE_KEY!!" force="true"/>
+    <env name="AcceptChNoneKey" value="!!YOUR_RESOURCE_KEY!!" force="true"/>    
+  </php>
+  <testsuites>
+    <testsuite name="Tests">
+      <file>tests/examples.php</file>
+      <file>tests/devicedetection.php</file>
+      <file phpVersion="7.1.0" phpVersionOperator='&gt;'>tests/examplesWeb.php</file>
+      <file phpVersion="6.0.0" phpVersionOperator='&lt;'>tests/examplesWeb_PHP5.php</file>
+      <file phpVersion="7.1.0" phpVersionOperator='&gt;'>tests/UACHCloudTests.php</file>
+      <file phpVersion="6.0.0" phpVersionOperator='&lt;'>tests/UACHCloudTests_PHP5.php</file>
+    </testsuite>
+  </testsuites>
+</phpunit>

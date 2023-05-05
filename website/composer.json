@@ -1,0 +1,5 @@
+{
+    "require": {
+        "51degrees/fiftyone.devicedetection": "^4.4"
+    }
+}
