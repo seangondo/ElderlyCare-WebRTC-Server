@@ -177,10 +177,10 @@ if($_SERVER["REQUEST_METHOD"] == "GET") {
                     <input type="submit" class="btn" name="Login" value="Login">
                 </div>
             </form>
-            <div class="center-text">
+            <!-- <div class="center-text">
                 <p>Don't have account? <a href="https://private-server.uk.to/test">Create an Account</a></p>
                 <p>Need help? <a href="https://www.google.com/">Contact us</a></p>
-            </div>
+            </div> -->
             <div class="card-footer"> </div>
         </div>
     </div>

@@ -140,10 +140,10 @@
             <div class="center">
                 <button class="btn" onClick="window.location='https://private-server.uk.to/caregiver/'">Log in as Care Giver</button>
             </div>
-            <div class="center-text">
+            <!-- <div class="center-text">
                 <p>Don't have account? <a href="https://private-server.uk.to/test">Create an Account</a></p>
                 <p>Need help? <a href="https://www.google.com/">Contact us</a></p>
-            </div>
+            </div> -->
             <div class="card-footer"> </div>
         </div>
     </div>

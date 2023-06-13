@@ -144,6 +144,19 @@ connection.sdpConstraints.mandatory = {
 // first step, ignore default STUN+TURN servers
 connection.iceServers = [];
 
+// // second step, set STUN url
+// connection.iceServers.push({
+//     urls: 'stun:private-server.uk.to:5349'
+// });
+
+
+// // last step, set TURN url (recommended)
+// connection.iceServers.push({
+//     urls: 'turn:private-server.uk.to:5349',
+//     credential: 'sean1234',
+//     username: 'seangondo'
+// });
+
 // second step, set STUN url
 connection.iceServers.push({
     urls: 'stun:private-server.uk.to:5349'
@@ -157,18 +170,35 @@ connection.iceServers.push({
     username: 'seangondo'
 });
 
-connection.iceProtocols = {
-    udp: true,
-    tcp: false
-};
-
-
 // connection.iceProtocols = {
 //     udp: true,
 //     tcp: false
 // };
 
+
+connection.iceProtocols = {
+    udp: true,
+    tcp: true
+};
+
 // connection.iceTransportPolicy = 'all';
+
+var width = 720;
+var height = 480;
+
+var supports = navigator.mediaDevices.getSupportedConstraints();
+
+var constraints = {};
+if (supports.width && supports.height) {
+    constraints = {
+        width: width,
+        height: height
+    };
+}
+
+connection.applyConstraints({
+    video: constraints
+});
 
 var localVideosContainer = document.getElementById('local-videos-container');
 var remoteVideosContainer = document.getElementById('remote-videos-container');

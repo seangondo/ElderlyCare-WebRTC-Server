@@ -21,8 +21,7 @@ else {
 if(isset($_COOKIE[$cookie_robot_id]) && isset($_COOKIE[$cookie_robot_room])) {
     $sql=mysqli_query($conn, "SELECT * FROM robot_table WHERE robot_id='" .$_COOKIE[$cookie_robot_id]."' AND robot_room='" .$_COOKIE[$cookie_robot_room]. "'");
     if($sql->num_rows > 0) {
-        // header("Location: test.php?login=berhasil&robot_id=".$_COOKIE[$cookie_robot_id]."&robot_room=".$_COOKIE[$cookie_robot_room]."");
-        header("Location: webrtc.php");
+       header("Location: webrtc.php");
     } else {
         setcookie($cookie_robot_id , "", time()-3600);
         setcookie($cookie_robot_room , "", time()-3600);
@@ -219,10 +218,6 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
                     <input type="submit" class="btn" name="Login" value="Login">
                 </div>
             </form>
-            <div class="center-text">
-                <p>Don't have account? <a href="https://private-server.uk.to/test">Create an Account</a></p>
-                <p>Need help? <a href="https://www.google.com/">Contact us</a></p>
-            </div>
             <div class="card-footer"> </div>
         </div>
     </div>
